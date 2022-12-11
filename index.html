@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>organic website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/942547a0cd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="organic.css"/>
+    <script>
+    function thankU(){
+      //alert("thank u it is working")
+      var name=document.fv.name.value;//for text .innerHTML,,,,for input field
+      //var namecheck=/^[a-zA-Z ]+$/
+      console.log("name value is:",name);
+      var mobile=document.fv.mobile.value;
+      console.log("mobile value is:",mobile);
+      var email=document.fv.email.value;
+      console.log("email value is:",email);
+      var password=document.fv.password.value;
+      var reg = /^([a-zA-Z0-9\._]+)@([a-z]+).([a-z]+){2,3}$/;
+      console.log("password value is:",password);
+      var checkpassword=document.fv.checkpassword.value;
+      console.log("checkpassword value is:",checkpassword);
+      if(name==''){
+        alert("Please enter your name");
+        name.focus();
+        return false;
+      }
+      if(name.length<3){
+        alert("Please check your name");
+        return false;
+      }
+      /*if(!name.match(nameCheck)){
+      		alert("Name must carry only characters")
+      		return false;
+      }*/
+      if(mobile==""){
+        alert("Please enter your mobile number");
+        return false;
+      }
+      if(isNaN(mobile)||mobile.length<10){
+        alert("Your mobile number is wrong check it once");
+        return false;
+      }
+      if(email==""){
+        alert("Enter your emailID");
+        return false;
+      }
+      if(!email.match(reg)){
+        alert("please check your emailID");
+        return false;
+      }
+
+      if(password==""){
+        alert("Enter your password");
+        return false;
+
+      }
+      if(password.length<8){
+        alert("password must carry minimum 8 characters")
+        return false;
+      }
+      if(checkpassword==""){
+        alert("Enter your re type field also");
+        return false;
+      }
+      if(!checkpassword.match(password)){
+        alert("please check your password and Re-type password fields once");
+        return false;
+      }
+      return true;
+    }
+</script>
+</head>
+<body>
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar scroll</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Link
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Link</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="https://en.wikipedia.org/wiki/Organic_food"><img src="https://res.cloudinary.com/digdliiab/image/upload/v1669740478/161-1610207_logo-organic-organic-food-logo-png-transparent-png_mp3gva.png" class="bggimg" alt=""><b><i>rganic</i></b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav m-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height:100px max-width:100px;">
+            <li class="nav-item active">
+              <a class="nav-link" href="#homeSection">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#trendingSection">Trending</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="#organicSection">Organic</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contactSection">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="loginorganic.html">login</a>
+              </li></a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false" href="#paymentSection">
+                Payment
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">On-line Payment</a></li>
+                <li><a class="dropdown-item" href="#">Offline payament</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Agencies</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="px-2 search" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      
+      
+<!--Home section-->
+<div id="homeSection">
+<section class="main">
+    <div class="container py-5">
+        <div class="row py-5">
+            <div class="col-lg-7 pt-5 text-center">
+                <h1 class="pt-2">Nature Has Always Cared For Us!</h1>
+              <a href="organic1.html"> <button class="btn1 mt-3">More Tips</button></a> 
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+<section class="new">
+    <div class="container py-4">
+        <div class="row pt-4">
+            <div class="col-lg-7 m-auto">
+                <div class="row text-center">
+                    <div class="col-md-4 col-lg-4">
+                        <img src="https://res.cloudinary.com/digdliiab/image/upload/v1669645071/889244_g41qot.jpg" class="img-luid" alt="">
+                        <h4 class="natural"> Natural</h4>
+                        <p class="health">Produce can be called organic if it's certified to have grown on soil that had no 
+                          prohibited substances applied for three years prior to harvest.
+                           </p>
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <img src="https://res.cloudinary.com/digdliiab/image/upload/v1669645121/bunch-of-wine-grapes-with-leaf-flat-purple-icon-for-food-apps-and-websites-vector_jih6mi.jpg" class="img-luid" alt="">
+                        <h4 class="natural">Organic</h4>
+                        <p class="health">organic food, fresh or processed food produced by organic farming methods. 
+                          Organic food is grown without the use of synthetic chemicals, 
+                          </p>
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <img src="https://res.cloudinary.com/digdliiab/image/upload/v1669645553/pngtree-cartoon-fruit-series-mango-image_1243125_xstsm4.jpg" class="img-luid" alt="">
+                        <h4 class="natural">Health</h4>
+                        <p class="health">The safety rules for the highest levels of residue allowed on conventional produce have changed.
+                          Prohibited substances not included.
+                          </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Trending section-->
+<div id="trendingSection">
+<section class="product">
+  <div class="container">
+      <div class="row">
+          <div class="row py-5 m-auto text-center">
+              <div class="col=lg-5">
+                  <h1>What's Trending</h1>
+                  <h6 style="color:red;">Be health organic Food</h6>
+              </div>
+          </div>
+          <a href="paynow1.html">     <div class="row">
+              <div class="col-lg-3 text-center">
+                  <div class="card border-0 bg-light mb-2">
+                  <div class="card-body">
+                        <img src="https://res.cloudinary.com/digdliiab/image/upload/v1669646581/51DoapEzQoL._SX522_PIbundle-24_TopRight_0_0_AA522SH20__soebd1.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <h6>Energy food</h6>
+                <p>$39.99</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="card border-0 bg-light mb-2">
+                    <div class="card-body">
+                        <img src="https://res.cloudinary.com/digdliiab/image/upload/v1669649992/x07kZrgzlz_vzukkl.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <h6>Nutritive Mix</h6>
+                <p>$69.99</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="card border-0 bg-light mb-2">
+                    <div class="card-body">
+                        <img src="https://res.cloudinary.com/digdliiab/image/upload/v1669648835/6132RAhxYvL._SX522_PIbundle-6_TopRight_0_0_AA522SH20__smagr8.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <h6>Energy balls</h6>
+                <p>$79.99</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="card border-0 bg-light mb-2">
+                    <div class="card-body">
+                        <img src="https://res.cloudinary.com/digdliiab/image/upload/v1669650825/chia_seeds_1920_1024x1024_68a9be85-79b4-4b65-a4b1-f88116f8d128_rxvebm.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <h6>Chia Seeds</h6>
+                <p>$59.99</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="card border-0 bg-light mb-2">
+                    <div class="card-body">
+                        <img src="https://res.cloudinary.com/digdliiab/image/upload/v1669650589/40195-0w600h600_Organic_Energy_Dried_Fruit_Mix_gw648t.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <h6>Fruit mix</h6>
+                <p>$99.99</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="card border-0 bg-light mb-2">
+                    <div class="card-body">
+                        <img src="https://res.cloudinary.com/digdliiab/image/upload/v1669650752/Standard-Front_1024x1024_du6fsb.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <h6>Energy bites</h6>
+                <p>$69.99</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="card border-0 bg-light mb-2">
+                    <div class="card-body">
+                        <img src="https://res.cloudinary.com/digdliiab/image/upload/v1669650487/main_1646212297_rwok8w.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <h6>Peanut Butter</h6>
+                <p>$49.99</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="card border-0 bg-light mb-2">
+                    <div class="card-body">
+                        <img src="https://res.cloudinary.com/digdliiab/image/upload/v1669650284/prd_1990836-Herbalife-Afresh-Energy-Drink-Mix-Pack-of-2-0.050-kg-Natural-Tulsi_c_l_xwpnxv.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <h6>Protein mix</h6>
+                <p>$89.99</p>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center m-auto">
+              <a href="organic3.html"><button class="btn2 mt-3">Click for more</button></a>
+            </div>
+            </div>
+        </div>
+</section>
+</div></a>
+<!--Organic section-->
+<div id="organicSection">
+<section class="about">
+    <div class="container py-5">
+        <div class="row py-5">
+            <div class="col-12 col-lg-8 m-auto text-center">
+                <h1>Welcome To Our Organic Food Society</h1>
+                <h6 style="color:red">Be Healthy Organic Food</h6>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-4">
+                    <a href="organic.video.html"><img src="https://res.cloudinary.com/digdliiab/image/upload/v1669651141/oragnic-food_tdzjgk.jpg" class="imgfr MB-3" alt=""></a>
+                    <h5 class="natural1">Best Quality Product</h5>
+                    <p class="health1">Produce can be called organic if it's certified to have grown on soil that had no 
+                        prohibited substances applied for three years prior to harvest.
+                         Prohibited substances include most synthetic fertilizers and pesticides.</p>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                  <a href="organic.video.html">   <img src="https://res.cloudinary.com/digdliiab/image/upload/v1669651125/farmer-holds-his-hands-wooden-box-vegetables-produce-green-background-fresh-organic-food-153356347_v0p17q.jpg" class="imgfr MB-3" alt=""></a>
+                    <h5 class="natural1">Best Quantity Product</h5>
+                    <p class="health1">organic food, fresh or processed food produced by organic farming methods. 
+                        Organic food is grown without the use of synthetic chemicals, 
+                        such as human-made pesticides and fertilizers, and does not contain genetically modified organisms (GMOs)</p>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                  <a href="organic.video.html">     <img src="https://res.cloudinary.com/digdliiab/image/upload/v1669651208/81947696_qhfisx.jpg" class="imgfr MB-3" alt=""></a>
+                    <h5 class="natural1">Best Safety Product</h5>
+                    <p class="health1" >The safety rules for the highest levels of residue allowed on conventional produce have changed. 
+                        In many cases, the levels have been lowered in Organic foods.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center m-auto">
+           <a href="organic4.html"><button class="btn2 mt-3">Shop more</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+<!--Explore section-->
+<div id="exploreSection">
+<section class="bgimg3 pt-4 pb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="explorehead">Explore our Products</h1>
+            <h6>Pick Your favourite from our product </h6>
+            <marquee class="sad">Be a part in our organic Family..Hurry up 10% Discount Festive sale</marquee>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="explorecards shadow p-3 mb-3">
+              <img
+                src="https://res.cloudinary.com/digdliiab/image/upload/v1669650589/40195-0w600h600_Organic_Energy_Dried_Fruit_Mix_gw648t.jpg"
+                class="exploreimage w-100"
+              />
+              <h1 class="cardhead4">Energy Mix</h1>
+              <a href="#" class="explorelink"
+                >Viewmore
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right-circle"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="explorecards shadow p-3 mb-3">
+              <img
+                src="https://res.cloudinary.com/digdliiab/image/upload/v1669646581/51DoapEzQoL._SX522_PIbundle-24_TopRight_0_0_AA522SH20__soebd1.jpg"
+                class="exploreimage w-100"
+              />
+              <h1 class="cardhead4">Nutritive mix</h1>
+              <a href="#" class="explorelink"
+                >Viewmore
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right-circle"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="explorecards shadow p-3 mb-3">
+              <img
+                src="https://res.cloudinary.com/digdliiab/image/upload/v1669650487/main_1646212297_rwok8w.png"
+                class="exploreimage w-100"
+              />
+              <h1 class="cardhead4">Peanut Butter</h1>
+              <a href="#" class="explorelink"
+                >Viewmore
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right-circle"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="explorecards shadow p-3 mb-3">
+              <img
+                src="https://res.cloudinary.com/digdliiab/image/upload/v1669650825/chia_seeds_1920_1024x1024_68a9be85-79b4-4b65-a4b1-f88116f8d128_rxvebm.jpg"
+                class="exploreimage w-100"
+              />
+              <h1 class="cardhead4">Protein Mix</h1>
+              <a href="#" class="explorelink"
+                >Viewmore
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right-circle"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </section>
+        </div>
+          
+<!--Payment section-->
+<div id="paymentSection">
+<div class="paybgimg pt-4 pb-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-2 order-1 order-md-2">
+        <img src="https://res.cloudinary.com/digdliiab/image/upload/v1669781931/black-line-icon-payment-salary-money-banking-logotype-139247303_bbsx4h.jpg"class="paymenting"/>
+      </div>
+          <div class="col-12 col-md-10 order-2 order-md-1">
+            <h1 class="payhead">Payment</h1>
+            <p class="paypara">Have good day with best deal .with our Healthy and safety organic products</p>
+           <a href="paynow1.html">  <button class="btn1">Pay now</button></a>
+              <div class="mt-3">
+                <img src="https://res.cloudinary.com/dxujeg5en/image/upload/v1669532521/visa-card-img_nuawu2.png"class="paycardimg"/>
+                <img src="https://res.cloudinary.com/dxujeg5en/image/upload/v1669532551/master-card-img_c3owpp.png"class="paycardimg"/>
+                <img src="https://res.cloudinary.com/dxujeg5en/image/upload/v1669532581/paypal-card-img_zgqesf.png"class="paycardimg"/>
+                <img src="https://res.cloudinary.com/dxujeg5en/image/upload/v1669532616/american-express-img_ovm5iy.png"class="paycardimg"/>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        </div>
+    <section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12">
+    
+    <img src="https://res.cloudinary.com/digdliiab/image/upload/v1669739160/1668898_xqeh9h.jpg"class="bmimg"alt="">
+</div>
+</div>
+</div>
+</section>
+</div>
+ <!---contactus section-->
+<div id="contactSection">   
+<section id="contactusSection">
+            <div class="container">   
+              <h1 class="text-center pt-3 pb-4" style="color: rgb(245, 242, 242)">Contact Us</h1>
+              <p class="text-center pt-1 pb-2" style="color: rgb(245, 242, 242)">Always Be Touch With Us..</p>
+              <div class="row mt-4">
+                <div class="col-12 col-lg-6 p-3 order-1 order-md-2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122409.99752927606!2d80.57484300597447!3d16.510317726967283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35eff9482d944b%3A0x939b7e84ab4a0265!2sVijayawada%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1669619720384!5m2!1sen!2sin" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+              </div>
+             
+              <div class="col-12 col-lg-6 order-2 order-md-1">
+                <form name="fv" onsubmit="return thankU()">
+                  <p><input type="text"class="form-control mt-3" name="name" placeholder="Enter your name" required/></p>
+                  
+                  <p><input type="text" class="form-control mt-3" name="mobile" placeholder="Enter your mobile number"/></p>
+                  <p><input type="text"class="form-control mt-3" name="email" placeholder="Enter your emailID"/></p>
+                  <p><input type="password"class="form-control mt-3" name="password" placeholder="Enter your password"/></p>
+                  <p><input type="password"class="form-control mt-3" name="checkpassword" placeholder="Re-type password"/></p>
+                  <p><input type="submit"class="butan" value="submit">
+                  <input type="reset" class="butan" value="clear"/></p>
+                </form>
+            
+                <!--<form>
+                    <input type="text" class="form-control form-control-lg" placeholder="Enter your name">
+            <input type="email" class="form-control mt-3" placeholder="Enter your Email">
+            <input type="text" class="form-control mt-3" placeholder="Subject">
+            <input type="number" class="form-control mt-3" placeholder="Enter your Mobile Number">
+            
+          <div class="mb-3 mt-3">
+            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Feedback or comments"></textarea>
+          </div>
+          </form>
+          <button class="btn btn-info mt-3"> Contact Us</button>-->
+          
+        </div>
+      </div> 
+    </div>
+</section>
+<section>
+  <div class="container">   
+    <h1 class="pt-3 pb-2" style="color: rgb(3, 95, 27)">Comments</h1>
+    <div class="row mt-4">
+      <div class="col-12 commentcard mb-2">
+  <p>
+    <h5><b>Anushka</b></h5>
+    <img src="https://res.cloudinary.com/digdliiab/image/upload/v1668404994/cld-sample.jpg" width="5%" height="25%" alt=""><br/>
+    At ORGANIC INDIA we celebrate the healing power of Mother Nature to nourish and restore us to our best health. Explore our curated range of certified organic, whole herb supplements, teas, and infusions 
+    to help you control your blood sugar the natural way. Because let’s face it, nature knows best!
+  </p>
+</div>
+<div class="col-12 commentcard mb-2">
+  <p>
+    <h5><b>Inaya</b></h5>
+    <img src="https://res.cloudinary.com/digdliiab/image/upload/v1669644045/cute-little-girl-with-fruits-isolated-blue-wall_231208-11558.jpg_mlqg9z.jpg" alt="" width="5%" height="25%">
+   It is a awesome Product  INDIA we celebrate the healing power of Mother Nature to nourish and restore us to our best health. Explore our curated range of certified organic, whole herb supplements, teas, and infusions 
+    to help you control your blood sugar the natural way. It gives us a super healthy conditions.
+  </p>
+</div>
+</section>
+<section class="socialmedia">
+  <div class="container" id="icenter1">
+    <div class="socialicons">
+      <a href="https://www.facebook.com/" target="blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/" target="blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/" target="blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.twitter.com/" target="blank"><i class="fa-brands fa-square-twitter"></i></a>
+      <a href="https://www.youtube.com/" target="blank"><i class="fa-brands fa-youtube"></i></i></a>
+      <h6 class="pb-2">Copyright © 2021-2023 Supermarket Grocery Supplies Pvt Ltd<h6>
+    </div>
+  </div>
+</section>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" 
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>

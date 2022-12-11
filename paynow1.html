@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pay now</title>
+    
+
+	<script type="text/javascript">
+		function sard(){
+		var sardholdername=document.getElementById("sardholdername").value
+		var sardholdernameCheck=/^[a-zA-Z ]+$/;
+		var sardnumber=document.getElementById("sardnumber").value
+		var sardnumbercheck=/^[0-9]\d{16}$/;
+		var expirationdate=document.getElementById("expirationdate").value
+		var expirationdateCheck=/^[0-9]\d{4}$/;
+		var cvc=document.getElementById("cvc").value
+		var cvcCheck=/^[0-9]\d{3}$/;
+		
+
+		if(sardholdername==""||sardholdername.length<3){
+			alert("Please enter your name")
+			return false
+		}
+		if(!sardholdername.match(sardholdernameCheck)){
+			alert("please check cardholdername")
+			return false
+		}
+		if(!sardnumber.match(sardnumberCheck)){
+			alert("please check cardnumber");
+			return false
+		}
+        if(!expirationdate.match(expirationdateCheck)){
+			alert("please check expirationdate");
+			return false
+		}
+		if(!cvc.match(cvcCheck)){
+			alert("please check cvc");
+			return false
+		}
+
+		return true;
+	}
+	</script>
+   
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link rel="stylesheet" href="organic.css">
+</head>
+<body>
+    <section class="goodsign">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-6 col-lg-6 text-center mt-5 mb-5">
+                <img src="https://res.cloudinary.com/digdliiab/image/upload/v1670734631/f8c422a0a0e6793b3f9113d419c5143a_eu5gns.gif" class="payimg" width="70%" height="70%"alt="">
+            </div>
+                <div class="col-12 col-md-6 col-lg-6 text-center mt-5 mb-5">
+<h1 class="sign1">Pay Now</h1>
+<form onsubmit="return sard()">
+<p class="sign">CARD HOLDER NAME:</p><p><input type="text" id="sardholdername" placeholder="JUSTIN.B"required></p>
+<p class="sign">CARD NUMBER:</p><p><input type="number" id="sardnumber" placeholder="1234-3456-7890 " required></p>
+<p class="sign">EXPIRATION DATE:</p><p><input type="number"id="expirationdate" placeholder="enter your number"required></p>
+<p class="sign">PASSWORD:</p><p><input type="password" id="password" placeholder="12/22"required></p>
+<p class="sign">CVC:</p><p><input type="number" id="cvc" placeholder="111"required></p>
+
+<button onclick="sard()" class="cstbutton mb-2">Submit</button>
+</form>
+<a href="organic.html"><button class="btn btn-info">Back</button></a>
+</div>
+</div>
+</div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>

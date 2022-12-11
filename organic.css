@@ -1,0 +1,339 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Rubik',sans-serif;
+}
+.navbar-brand{
+    font-size: 1rem;
+    color: black;
+    font-family: 'Rubik',sans-serif;
+}
+.bggimg{
+    width: 80px;
+    height: 70px;
+}
+.navbar-brand:hover{
+    color: black;
+    transform: scale(1.04);
+}
+.nav-link{
+    margin-right: 5px;
+    margin-left: 5px;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Rubik',sans-serif;
+}
+.nav-link:hover{
+    color: black;
+    transform: scale(1.08);
+}
+.search{
+height:40px;
+width:80%;
+border-radius: 60px;
+outline: none;
+margin-right: -35px;
+border:2px solid rgb(248,26,92);
+font-family: 'Rubik',sans-serif;
+}
+.btn0{
+    height:40px;
+    width:40%;
+    outline: none;
+    border: none;
+    background: rgb(248,26,92);
+     color: white;
+     border-radius: 60px;
+     font-weight: 700;
+     font-family: 'Rubik',sans-serif;
+}
+.btn0:hover{
+    background-color: rgb(248,26,92);
+    transform: scale(1.08);
+}
+.main{
+    background: url("https://res.cloudinary.com/digdliiab/image/upload/v1669644831/fruit-cones-qhd_gjvprc.jpg")no-repeat;
+    background-size: cover;
+    height: 90vh;
+    background-position:50% 50%;
+    width:100%;
+    color: white;
+}
+.main h1{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.btn1{
+    height: 45px;
+    width: 35%;
+    border: none;
+    outline: none;
+    background-color: rgb(248,26,92);
+    color: white;
+    font-weight: 700;
+    border-radius: 60px;
+}
+.natural{
+    color: rgb(240, 235, 237);
+    background-color: rgb(208, 52, 99);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    font-weight: lighter;
+    
+}
+.health{
+    color: rgb(63, 63, 63);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+}
+.natural1{
+    color:rgb(205, 49, 95);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    transition: .5s;
+    
+}
+.health1{
+    color: rgb(63, 63, 63);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+}
+.img-fluid{
+    width: 90px;
+    height: 90px;
+    padding: 2px;
+    margin: 2px;
+    text-align: center;
+    transform: 5s;
+}
+.btn1:hover{
+    background-color:rgb(205, 49, 95);
+    transform: scale(1.08);
+}
+.h1{
+    font-weight: 700;
+}
+.card:hover{
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+.btn2{
+    height: 45px;
+    width: 35%;
+    border: none;
+    outline: none;
+    background-color: rgb(248,26,92);
+    color: white;
+    font-weight: 700;
+    border-radius: 60px;
+}
+.btn2:hover{
+    background-color:rgb(208, 52, 99);
+    transform: scale(1.08);
+}
+.img-luid{
+    width: 70px;
+    height: 70px;
+    padding: 2px;
+    margin: 2px;
+    text-align: center;
+}
+.img-luid:hover{
+    transform: scale(1.08);
+}
+.imgfr{
+    width: 340px;
+    height: 180px;
+    padding: 2px;
+    margin: 2px;
+    text-align: center;
+}
+.imgfr:hover{
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.sad{
+    background-color: rgb(208, 52, 99);
+    color: white;
+}
+.bgimg3{
+    background-color: white;
+}
+.explorehead{
+    color:#183b56;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:700;
+    font-size: 28px;
+}
+.explorecards{
+    border-radius: 16px;
+}
+.exploreclass{
+    border-radius: 16px;
+}
+.cardhead4{
+    color:#323f4b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 24px;
+}
+.explorelink{
+    color:rgb(205, 49, 95);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+.explorecards:hover{
+    transform: scale(1.08);
+}
+.paybgimg{
+    background-color: white;
+    
+}
+.paymenting{
+    width:200px;
+    height:180px;
+}
+.payhead{
+    color:#183b56;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:700;
+    font-size: 25px;
+}
+.paypara{
+    color:#121212;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+    font-size: 16px;
+}
+.cstbutton{
+        color: white;
+        background-color: #c32142;
+        width: 130px;
+        height:45px;
+        border-width:0px;
+        border-radius: 8px;
+        margin-right:10px;
+    
+}
+.cstbutton:hover{
+    color: #f5f7fa;
+    transform:scale(1.08);
+}
+.paycardimg{
+    width:50px;
+    height:50px;
+    margin-right: 28px;
+}
+.paycardimg:hover{
+    transform: scale(1.08);
+}
+
+#contactusSection{
+    padding-bottom: 4rem;
+    background-color: rgb(173, 25, 94);
+}
+.bmimg{
+    width: 1110px;
+    height:20px;
+}
+.socialicons{
+    font-size: 40px;
+    position: relative;
+     cursor:pointer;
+     color: white;
+     text-align: center;
+ }
+ .icenter1{
+     text-align: center;
+ }
+ .fa-brands:hover{
+     color: rgb(24, 223, 237);
+     transform: scale(1.08);
+ }
+ .fa-brands{
+     color:white;
+ }
+ .fa-facebook,.fa-instagram,.fa-linkedin,.fa-square-twitter,.fa-youtube{
+     margin: 40px;
+ }
+ .white{
+    text-align: center;
+ }
+ .asd{
+    background-color: white;
+    color: rgb(205, 49, 95);
+    width: 10px;
+ }
+ .socialmedia{
+    background-color: #121212;
+    height:250px;
+ }
+ .butan{
+    color: rgb(243, 17, 70);
+        background-color: #f4f1f2;
+        width: 130px;
+        height:45px;
+        border-width:0px;
+        border-radius: 8px;
+        margin-right:10px;
+
+ }
+ .butan:hover{
+    background-color: rgb(28, 143, 219);
+    color:black;
+ }
+ .moreimg{
+    background-image: url("https://res.cloudinary.com/digdliiab/image/upload/v1670577647/mix-fresh-tasty-berries-right-white-background_23-2148196294_lszzxo.jpg");
+    height: 200vh;
+    width:100vw;
+    background-size: cover;
+ }
+ .more{
+    color: #636465;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+ }
+ .moreheading{
+    color:rgb(244, 6, 45)
+ }
+ .morevideo{
+    width: 500px;
+    height:500px;
+    margin: 0px;
+    padding:0px;
+    margin-bottom: 0px;
+ }
+ .peanut{
+    color:#d81099;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:700;
+    font-size: 25px;
+}
+.peanut1{
+    color:#ca6a77;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+    font-size: 16px;
+}
+.goodsign{
+    border-radius: solid;
+    background-color: #fffbfb;
+}
+.sign1{
+    color: #c32142;
+    background-color: antiquewhite;
+}
+.commentcard{
+    background-color: #e4e5e7;
+}
+
